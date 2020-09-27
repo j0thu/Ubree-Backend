@@ -23,10 +23,6 @@ export class ServiceAgent extends Model {
   public ifscCode!: string;
   public branchName!: string;
   public accountType!: string;
-  public isActive!: number;
-  public created!: string;
-  public createdBy!: string;
-  public modified!: string;
 }
 
 ServiceAgent.init(
@@ -137,7 +133,7 @@ ServiceAgent.init(
     },
   },
   {
-    tableName: "Service Agent",
+    tableName: "ServiceAgent",
     sequelize,
   }
 );
